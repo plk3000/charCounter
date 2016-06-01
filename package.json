@@ -1,0 +1,25 @@
+{
+  "name": "count-chars",
+  "version": "0.0.1",
+  "description": "Displays a count for each character in a file",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plk3000/charCounter.git"
+  },
+  "keywords": [
+    "count",
+    "chars",
+    "file",
+    "char"
+  ],
+  "author": "plk300",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/plk3000/charCounter/issues"
+  },
+  "homepage": "https://github.com/plk3000/charCounter#readme"
+}
