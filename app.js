@@ -1,3 +1,5 @@
+/*global escape: true */
+
 (function() {
   'use strict';
 
@@ -34,11 +36,15 @@
   rl.on('close', () => {
     var charsArray = [];
     for (var char in chars) {
-      var charObject = {
-        "char": encodeURI(char),
-        "count": chars[char]
-      };
-      charsArray.push(charObject);
+      try {
+        var charObject = {
+          "char": encodeURI(char),
+          "count": chars[char]
+        };
+        charsArray.push(charObject);
+      } catch (error) {
+        console.error('escaped: ' + escape(char));
+      }
     }
     charsArray.sort(compare);
     if (!printText) {
